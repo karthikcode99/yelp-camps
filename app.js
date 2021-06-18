@@ -19,11 +19,11 @@ const mongoSanitize = require('express-mongo-sanitize');
 const userRoutes = require('./routes/users');
 const campgroundRoutes = require('./routes/campgrounds');
 const reviewRoutes = require('./routes/reviews');
-// const kar=process.env.DB_URL;
+const kar=process.env.DB_URL;
 
 // const MongoDBStore=require('connect-mongo')(session);
-const datab='mongodb://localhost:27017/yelp-camp'
-mongoose.connect('mongodb://localhost:27017/yelp-camp', {
+// const datab='mongodb://localhost:27017/yelp-camp'
+mongoose.connect('kar', {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
