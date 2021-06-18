@@ -23,7 +23,7 @@ const kar=process.env.DB_URL;
 
 // const MongoDBStore=require('connect-mongo')(session);
 // const datab='mongodb://localhost:27017/yelp-camp'
-mongoose.connect('kar', {
+mongoose.connect(kar, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
